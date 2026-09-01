@@ -357,6 +357,7 @@ button {
 }
 .section--muted {
   background: var(--bg-muted);
+  border-top: 1px solid var(--line);
 }
 
 .section-head {
