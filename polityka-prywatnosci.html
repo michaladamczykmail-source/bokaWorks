@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Polityka prywatności — bokaWorks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f4ef;
+    --ink: #141414;
+    --ink-soft: #55544d;
+    --line: #dedad0;
+    --accent-dark: #b6d43a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.65; }
+  h1, h2 { font-weight: 800; margin: 0; letter-spacing: -0.01em; }
+  a { color: var(--ink); }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+  .back { font-size: 0.88rem; font-weight: 600; text-decoration: none; display: inline-block; margin-bottom: 32px; color: var(--ink); }
+  h1 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 8px; }
+  .updated { font-size: 0.8rem; color: var(--ink-soft); margin-bottom: 40px; }
+  h2 { font-size: 1.1rem; margin: 40px 0 12px; }
+  p, li { font-size: 0.92rem; color: var(--ink-soft); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.85rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink); font-weight: 700; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; font-size: 0.85rem; font-weight: 700;
+    border: 1.5px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer;
+    border-radius: 999px; font-family: inherit;
+  }
+  .btn:hover { background: var(--ink); color: #fff; }
+  #cookie-reset-msg { font-size: 0.8rem; color: var(--ink-soft); margin-top: 10px; display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← Powrót do strony głównej</a>
+  <h1>Polityka prywatności i plików cookie</h1>
+  <p class="updated">Ostatnia aktualizacja: 1 września 2026</p>
+
+  <h2>1. Administrator danych</h2>
+  <p>
+    Administratorem danych osobowych zbieranych za pośrednictwem tej strony jest
+    BOKA Michał Adamczyk, NIP 6721794571, REGON 520470401,
+    ul. Aroniowa 9A, 62-023 Robakowo, e-mail: <a href="mailto:info@bokaworks.pl">info@bokaworks.pl</a>,
+    telefon: <a href="tel:+48668476538">+48 668 476 538</a>.
+  </p>
+
+  <h2>2. Jakie dane zbieramy</h2>
+  <p>Dane podawane dobrowolnie przez formularz kontaktowy: imię i nazwisko, dane kontaktowe (telefon lub e-mail) oraz treść wiadomości. Dane te przetwarzamy wyłącznie w celu odpowiedzi na zapytanie, na podstawie zgody wyrażonej przy wysyłce formularza (art. 6 ust. 1 lit. a RODO).</p>
+
+  <h2>3. Pliki cookie</h2>
+  <p>Strona korzysta wyłącznie z niezbędnych plików cookie (a ściślej — z pamięci lokalnej przeglądarki, tzw. localStorage), które zapamiętują Twój wybór w banerze cookies. Nie wymagają one zgody — bez nich baner pokazywałby się przy każdej wizycie.</p>
+  <table>
+    <tr><th>Kategoria</th><th>Cel</th><th>Podstawa prawna</th></tr>
+    <tr>
+      <td>Niezbędne</td>
+      <td>Zapamiętanie Twojego wyboru w banerze cookies.</td>
+      <td>Prawnie uzasadniony interes (art. 6 ust. 1 lit. f RODO)</td>
+    </tr>
+  </table>
+  <p>Strona nie korzysta z cookies marketingowych, analitycznych ani śledzących.</p>
+
+  <h2>4. Czcionki Google Fonts</h2>
+  <p>Do wyświetlania czcionki strony (Inter) korzystamy z Google Fonts — plik czcionki ładowany jest bezpośrednio z serwerów Google (Google LLC), co może wiązać się z przekazaniem adresu IP do Google w momencie wczytania strony. Nie dzieje się to za pomocą plików cookie.</p>
+
+  <h2>5. Zmiana zgody na cookies</h2>
+  <p>Możesz w każdej chwili zresetować zapamiętany wybór — poniższy przycisk usunie zapisaną decyzję, a baner cookies pojawi się ponownie przy następnym wejściu na stronę główną.</p>
+  <button class="btn" id="cookie-reset-btn" type="button">Zresetuj zgodę na cookies</button>
+  <p id="cookie-reset-msg">Gotowe — wróć na <a href="index.html">stronę główną</a>, baner pojawi się ponownie.</p>
+
+  <h2>6. Odbiorcy danych</h2>
+  <ul>
+    <li>Dostawca hostingu i poczty e-mail (Hostinger) — techniczna obsługa strony i wysyłki wiadomości z formularza.</li>
+    <li>Google LLC — wyłącznie w zakresie dostarczenia czcionki Google Fonts (patrz pkt 4).</li>
+  </ul>
+
+  <h2>7. Okres przechowywania</h2>
+  <p>Dane z formularza kontaktowego przechowujemy przez czas niezbędny do udzielenia odpowiedzi i obsługi zapytania, nie dłużej niż przez okres przedawnienia ewentualnych roszczeń.</p>
+
+  <h2>8. Twoje prawa</h2>
+  <p>Zgodnie z RODO przysługuje Ci prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz sprzeciwu wobec przetwarzania, a także prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych. W sprawach dotyczących Twoich danych możesz się z nami skontaktować pod adresem <a href="mailto:info@bokaworks.pl">info@bokaworks.pl</a>.</p>
+</div>
+<script>
+  document.getElementById('cookie-reset-btn').addEventListener('click', function () {
+    try { localStorage.removeItem('bokaworks_cookie_consent'); } catch (e) {}
+    document.getElementById('cookie-reset-msg').style.display = 'block';
+  });
+</script>
+</body>
+</html>

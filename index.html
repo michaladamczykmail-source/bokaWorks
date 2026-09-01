@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -104,7 +104,7 @@
 
       <div class="cards-grid">
 
-        <a href="#kontakt" class="card service-card">
+        <a href="https://bokaworks.pl/spacer360/" class="card service-card">
           <span class="card-arrow-corner">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
@@ -180,9 +180,58 @@
     </div>
   </section>
 
+  <!-- KONTAKT -->
+  <section class="section" id="kontakt">
+    <div class="container contact-inner">
+      <div class="contact-intro">
+        <p class="section-eyebrow">KONTAKT</p>
+        <h2 class="section-title">Porozmawiajmy<br>o Twoim <span class="accent-text">projekcie.</span></h2>
+        <p class="section-note contact-note">Napisz kilka słów, o co chodzi — odezwiemy się najszybciej, jak to możliwe.</p>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="cf-name">Imię i nazwisko</label>
+          <input type="text" id="cf-name" name="name" autocomplete="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="cf-contact">E-mail lub telefon</label>
+          <input type="text" id="cf-contact" name="contact" autocomplete="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="cf-message">Wiadomość <span class="label-optional">(opcjonalnie)</span></label>
+          <textarea id="cf-message" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="form-row form-row--consent">
+          <label class="consent-label">
+            <input type="checkbox" id="cf-consent" name="consent" required>
+            <span>Zgadzam się na kontakt w sprawie mojego zapytania.</span>
+          </label>
+        </div>
+
+        <!-- honeypot: ukryte dla ludzi, widoczne dla botów -->
+        <div class="form-hp" aria-hidden="true">
+          <label for="cf-website">Strona internetowa</label>
+          <input type="text" id="cf-website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="form-row form-row--submit">
+          <button type="submit" class="btn btn-dark" id="cf-submit">
+            Wyślij wiadomość
+            <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
 </main>
 
-<footer class="site-footer" id="kontakt">
+<footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
       <a href="#top" class="logo logo--footer">boka<span>Works</span></a>
@@ -207,10 +256,20 @@
 
   <div class="container footer-bottom">
     <p>&copy; <span id="year">2026</span> bokaWorks</p>
-    <a href="#">Polityka prywatności</a>
+    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
   </div>
 </footer>
 
-<script src="script.js?v=2"></script>
+<!-- ===== COOKIE BANNER ===== -->
+<div class="cookie-banner" id="cookieBanner" hidden>
+  <div class="container cookie-banner-inner">
+    <p>Ta strona używa wyłącznie niezbędnych plików cookie — technicznych, potrzebnych do zapamiętania Twojego wyboru w tym banerze. Nie korzystamy z cookies marketingowych ani analitycznych. Szczegóły w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</p>
+    <div class="cookie-actions">
+      <button class="btn btn-accent" id="cookieAccept" type="button">Rozumiem</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js?v=4"></script>
 </body>
 </html>
