@@ -314,19 +314,40 @@ button {
 .diagram-label {
   position: absolute;
   left: 64%;
-  transform: translateY(-50%);
+  max-width: 250px;
+  transform: translateY(-11px);
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 6px;
 }
-.diagram-label strong {
+.diagram-heading {
   font-size: 0.95rem;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.diagram-heading strong {
   font-weight: 700;
   letter-spacing: 0.02em;
 }
-.diagram-label span {
-  font-size: 0.82rem;
+.diagram-solution {
+  display: inline-block;
+  align-self: flex-start;
+  font-style: normal;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-ink);
+  background: var(--accent);
+  padding: 3px 9px;
+  border-radius: 999px;
+  line-height: 1.35;
+  white-space: normal;
+}
+.diagram-desc {
+  font-style: italic;
+  font-size: 0.78rem;
   color: var(--ink-soft);
+  line-height: 1.4;
 }
 
 /* ---------- Sections (shared) ---------- */
@@ -479,9 +500,17 @@ button {
 }
 
 .card-subtitle {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
   font-size: 0.92rem;
-  color: var(--ink-soft);
+  font-weight: 600;
+  color: var(--ink);
   margin-bottom: 16px;
+}
+.subtitle-arrow {
+  color: var(--accent-dark);
+  font-weight: 700;
 }
 
 .card-desc {
